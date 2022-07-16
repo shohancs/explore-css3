@@ -8,21 +8,39 @@
 
         <style>
             .box{
-                width: 150px;
-                height: 150px;
+                width: 100px;
+                height: 100px;
                 border: 3px solid crimson;
-                background-color: cadetblue;
+                background-color:coral;
+                transition: width 1s, height 1s, transform 1s;               
+            }
+
+            .head{
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow:ellipsis;
             }
 
             .box:hover{
-                width: 300px;
+                width: 200px;
+                height: 200px;
+                transform: rotate(180deg);
             }
         </style>
     </head>
     
     <body>
         <div class="box">
-            <h1>Transition</h1>
+            <h1 class="head">Transition</h1>
+        </div>
+        <div class="box">
+            <h1 class="head">Transition</h1>
+        </div>
+        <div class="box">
+            <h1 class="head">Transition</h1>
+        </div>
+        <div class="box">
+            <h1 class="head">Transition</h1>
         </div>
     </body>
 </html>
