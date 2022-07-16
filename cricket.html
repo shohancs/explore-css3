@@ -10,16 +10,23 @@
             .field{
                 border: 2px solid;
             }
+            .ball{
+                height: 50px;
+                width: 50px;
+                background-color: red;
+                border-radius: 25px;
+            }
             .field:hover .bat{
                 transform: rotate(-60deg);
                 transform-origin: top right;
-            }
+            }            
         </style>
     </head>
 
     <body>
         <div class="field">
             <img class="bat" src="images/bat.png" alt="">
+            <div class="ball"></div>
         </div>
     </body>
 </html>
